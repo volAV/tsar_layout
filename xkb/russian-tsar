@@ -1,0 +1,54 @@
+// Russian engineering keyboard layout: Tsar
+// Based on the Russian "Diktor" keyboard layout
+// Optimized for compact (5-6 columns) split-keyboards
+// Volochay Andrey <andrey@volochay.info>
+// Last changes 2023/02/11
+// Version 1.0
+
+partial alphanumeric_keys
+xkb_symbols "tsar" {
+
+    include "us(tsar_colemak_dh)"
+    name[Group1]= "Russian (Tsar)";
+
+    key <AE02>  {[          NoSymbol,          quotedbl ]};   // 2 " apostroph
+    key <AE03>  {[          NoSymbol,        numerosign ]};   // 3
+    key <AE04>  {[          NoSymbol,          question ]};   // 4 ?
+    key <AE07>  {[          NoSymbol,             slash ]};   // 7 /
+
+    key <AD01> { [      Cyrillic_sha,      Cyrillic_SHA ] };  // ш Ш
+    key <AD02> { [   Cyrillic_shorti,   Cyrillic_SHORTI ] };  // й Й
+    key <AD03> { [       Cyrillic_ya,       Cyrillic_YA ] };  // я Я
+    key <AD04> { [     Cyrillic_yeru,     Cyrillic_YERU ] };  // ы Ы
+    key <AD05> { [       Cyrillic_yu,       Cyrillic_YU ] };  // ю Ю
+    key <AD06> { [      Cyrillic_che,      Cyrillic_CHE ] };  // ч Ч
+    key <AD07> { [       Cyrillic_ka,       Cyrillic_KA ] };  // к К
+    key <AD08> { [       Cyrillic_el,       Cyrillic_EL ] };  // л Л
+    key <AD09> { [       Cyrillic_de,       Cyrillic_DE ] };  // д Д
+    key <AD10> { [       Cyrillic_be,       Cyrillic_BE ] };  // б Б
+
+    key <AC01> { [        Cyrillic_i,        Cyrillic_I ] };  // и И
+    key <AC02> { [        Cyrillic_a,        Cyrillic_A ] };  // а А
+    key <AC03> { [       Cyrillic_ie,       Cyrillic_IE,       Cyrillic_io,       Cyrillic_IO ] };  // е Е ё Ё
+    key <AC04> { [        Cyrillic_o,        Cyrillic_O,        Cyrillic_e,        Cyrillic_E ] };  // о О э Э
+    key <AC05> { [             comma,            period ] };  // , .
+    key <AC06> { [       Cyrillic_ze,       Cyrillic_ZE ] };  // з З
+    key <AC07> { [       Cyrillic_en,       Cyrillic_EN,       Cyrillic_ef,       Cyrillic_EF ] };  // н Н ф Ф
+    key <AC08> { [       Cyrillic_te,       Cyrillic_TE ] };  // т Т
+    key <AC09> { [       Cyrillic_es,       Cyrillic_ES ] };  // с С
+    key <AC10> { [       Cyrillic_er,       Cyrillic_ER ] };  // р Р
+
+    key <AB01> { [    Cyrillic_shcha,    Cyrillic_SHCHA ] };  // щ Щ
+    key <AB02> { [       Cyrillic_ha,       Cyrillic_HA ] };  // х Х
+    key <AB03> { [ Cyrillic_softsign, Cyrillic_hardsign, Cyrillic_SOFTSIGN, Cyrillic_HARDSIGN ] };  // ь ъ Ь Ъ
+    key <AB04> { [        Cyrillic_u,        Cyrillic_U ] };  // у У
+    key <AB05> { [      Cyrillic_tse,      Cyrillic_TSE ] };  // ц Ц
+    key <AB06> { [      Cyrillic_ghe,      Cyrillic_GHE ] };  // г Г
+    key <AB07> { [       Cyrillic_ve,       Cyrillic_VE ] };  // в В
+    key <AB08> { [       Cyrillic_em,       Cyrillic_EM ] };  // м М
+    key <AB09> { [       Cyrillic_pe,       Cyrillic_PE ] };  // п П
+    key <AB10> { [      Cyrillic_zhe,      Cyrillic_ZHE ] };  // ж Ж
+
+    include "level3(ralt_switch)"
+    include "kpdl(dot)"
+};
